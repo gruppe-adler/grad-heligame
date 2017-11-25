@@ -1,0 +1,11 @@
+{
+    "name": "grad-heligame",
+    "contributors": [
+        {
+            "name": "Slant",
+            "name": "McDiod"
+        }
+    ],
+    "description": "adds minigame to helis to practice landings and take-off",
+    "version": "0.0.1"
+}
