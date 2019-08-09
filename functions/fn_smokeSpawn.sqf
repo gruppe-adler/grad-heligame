@@ -10,9 +10,21 @@ _smokeColor = selectRandom
     "SmokeShellPurple",
     "SmokeShellGreen"
   ];
+ _flareColor = selectRandom
+    [
+      "F_40mm_Green",
+      "F_40mm_White",
+      "F_40mm_Red",
+      "F_40mm_Cir",
+      "F_40mm_Yellow"
+    ];
 
 // Smoke spawnen.
 _GRAD_lz_smoke = _smokeColor createVehicle _GRAD_lz_pos;
+if (daytime >= 19.5 && daytime <= 4.5) then {
+    _GRAD_lz_flare = _flareColor createVehicle (_GRAD_lz_pos vectorAdd [0,0,50]);
+};
+
 hint "Smoke is on the deck!";
 
 // Trigger erstellen, um den Smoke zu löschen
@@ -29,7 +41,7 @@ _GRAD_lz_trg setTriggerStatements
       ['TaskSucceeded',['','LZ abgeschlossen!']] call BIS_fnc_showNotification;
       deleteMarker (thisTrigger getVariable 'GRAD_local_start_marker');
       deleteMarker (thisTrigger getVariable 'GRAD_local_lz_marker');
-      [] call GRAD_heligame_fnc_lz;
+      [] call GRAD_heligame_fnc_start;
       deleteVehicle thisTrigger;
     ",
     "this"
