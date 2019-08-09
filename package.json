@@ -3,9 +3,10 @@
     "contributors": [
         {
             "name": "Slant",
-            "name": "McDiod"
+            "name": "McDiod",
+            "name": "AdlerSalbei"
         }
     ],
     "description": "adds minigame to helis to practice landings and take-off",
-    "version": "0.0.1"
+    "version": "1.0.0"
 }
