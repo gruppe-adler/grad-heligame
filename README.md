@@ -27,3 +27,13 @@ _for details about what npm is and how to use it, look it up on [npmjs.com](http
 
 ## Usage
 Get into any helicopter and execute the *Heligame!* mouse wheel action. Fly to the LZ (marked on map), land on the smoke, wait until the next LZ is generated. Repeat until you can land like a pro. Will end automatically when you stop completing your LZs.
+
+### Configuration
+
+you may set the following global variables at any point in time:
+
+* `GRAD_heligame_smokeShells` - array of classnames
+* `GRAD_heligame_flareShells` - array of classnames
+* `GRAD_heligame_smokeDist` - smoke will be laid once helicopter is within this distance
+* `GRAD_heligame_LZ_distance` - array with min/mid/max distances
+* `GRAD_heligame_timeout` - how many seconds you have to do the task

@@ -1,4 +1,7 @@
+assert (isServer);
+
 params ["_waitTime","_objects"];
+
 [{
     {
         if (_x isEqualType objNull && {!isNull _x}) then {

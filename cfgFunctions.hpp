@@ -7,12 +7,14 @@ class grad_heligame {
         file = MODULES_DIRECTORY\grad-heligame\functions;
 
         class addAction {};
+        class canSlingload {};
         class cargoLz {};
         class cargoPickup {};
         class cleanUp {};
         class endCargo {};
         class findLZ {};
         class initModule {postInit = 1;};
+        class isNight {};
         class lz {};
         class smokeSpawn {};
         class smokeSpawnCargo {};

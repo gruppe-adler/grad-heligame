@@ -1,0 +1,1 @@
+sunOrMoon < 1

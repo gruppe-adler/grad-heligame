@@ -1,11 +1,9 @@
 {
     "name": "grad-heligame",
     "contributors": [
-        {
-            "name": "Slant",
-            "name": "McDiod",
-            "name": "AdlerSalbei"
-        }
+        {"name": "Slant"},
+        {"name": "McDiod"},
+        {"name": "AdlerSalbei"}
     ],
     "description": "adds minigame to helis to practice landings and take-off",
     "version": "1.0.0"
