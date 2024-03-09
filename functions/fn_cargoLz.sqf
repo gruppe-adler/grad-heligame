@@ -39,7 +39,7 @@ _GRAD_smoke_trg setTriggerActivation ["ANY", "PRESENT", false];
 _GRAD_smoke_trg setVariable ["_GRAD_localtemp", _GRAD_lz_trg];
 _GRAD_smoke_trg setTriggerStatements
 [
-"this",
+"player in thisList || (vehicle player) in thisList",
 format ["
    [%1, '%2'] call GRAD_heligame_fnc_smokespawnCargo;
    deleteVehicle thisTrigger;
